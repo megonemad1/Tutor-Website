@@ -14,7 +14,7 @@
 <body>
     <div class="jumbotron p-2 m-4">
         <h1>{{ page.title }}</h1>
-        <p>{% for i in (0..page.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true"></i>{% endfor %}</p>
+        <p>{% for i in (1..page.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>{% endfor %}{% for i in (page.rating..4) %}<i class="fa fa-star-o " aria-hidden="true "></i>{% endfor %}</p>
         <hr>
         <p>{{ page.content }}</p>
     </div>

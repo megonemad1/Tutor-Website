@@ -30,7 +30,7 @@
 
                 <!-- Title -->
 
-                <h5>{% for i in (0..post.rating) %}<i class="fa fa-star" aria-hidden="true"></i>{% endfor %}</h5>
+                <h5>{% for i in (1..post.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>{% endfor %}{% for i in (post.rating..4) %}<i class="fa fa-star-o" aria-hidden="true"></i>{% endfor %}</h5>
                 <hr>
                 <!-- Text -->
                 <p class="card-text">
@@ -46,7 +46,7 @@
                     {% if post.url_twitter != null %}
                     <li class="list-inline-item pr-2"><a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></li>
                     {% endif %} {% if post.url_github != null %}
-                    <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-github-f pr-1"></i></a></li>
+                    <li class="list-inline-item pr-2"><a href="{{ post.url_github }}" class="white-text" style="color:#000000;"><i class="fa fa-github pr-1"></i></a></li>
                     {% endif %}
                 </ul>
             </div>
