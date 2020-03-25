@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/321c8d51e5.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    <div class="jumbotron m-2">
+        {{ content }}
+    </div>
+    <h3>
+        Reviews</h3>
+    <div class="d-flex flex-row">
+        {% for post in site.categories.Reviews %}
+        <!-- Card -->
+        <div class="card p-2 m-2 col-3 align-items-center justify-content-center">
+            <h4 class="card-title mt-4">{{ post.title }}</h4>
+            <!-- Button -->
+
+
+            <!-- Card content -->
+            <div class="card-body p-2">
+
+                <!-- Title -->
+
+                <h5>{% for i in (0..post.rating) %}*{% endfor %}</h5>
+                <hr>
+                <!-- Text -->
+                <p class="card-text">
+                    <a href="{{ post.url }}">{{ post.excerpt | truncate: 48 }}</a>
+                </p>
+
+            </div>
+
+            <!-- Card footer -->
+            <div class="rounded-bottom mdb-color lighten-3 text-center pt-0">
+                <ul class="list-unstyled list-inline font-small">
+                    <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>{{ post.date | date_to_string }}</li>
+                    {% if post.url_twitter != null %}
+                    <li class="list-inline-item pr-2"><a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></li>
+                    {% endif %} {% if post.url_github != null %}
+                    <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-github-f pr-1"></i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
