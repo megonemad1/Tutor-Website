@@ -1,6 +1,6 @@
 ---
 layout: category_list
-title:  "reviews"
+title:  "Reviews"
 ---
 
 
