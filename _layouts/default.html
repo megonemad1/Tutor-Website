@@ -28,7 +28,7 @@
         <li id="nav-{{p.title}}" class="nav-item">
             <a class="nav-link {% if p.title == page.title %} active {% endif %}" href="{{  p.url | relative_url}}">{{ p.title | capitalize }}</a>
         </li>
-        {% endif %}{{ site.categories}} {{ c }} {% endfor %}
+        {% endif %} {% endfor %}
     </ul>
     {{ content }}
 </body>
