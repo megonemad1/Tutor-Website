@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="col-10 m-2">
     <ul class="nav nav-tabs">
         {% for p in site.pages %} {% assign c = p.url | split: '.' | first | split: '/' | slice: -1 | first %} {% if site.categories contains c %}
         <li id="nav-{{ c }}" class="nav-item dropdown">
@@ -30,7 +31,6 @@
         </li>
         {% endif %} {% endfor %}
     </ul>
-    <div class="col-10 m-2">
         {{ content }}
     </div>
 </body>
