@@ -16,7 +16,7 @@
     <ul class="nav nav-tabs">
         {% for p in site.pages %} {% assign c = p.url | split: '.' | first | split: '/' | slice: -1 | first %} {% if site.categories contains c %}
         <li id="nav-{{ c }}" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle {% if p.title == page.title %} active {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ p.title | capitalize  }}</a>
+            <a class="nav-link dropdown-toggle {% if page.url contains c %} active {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ p.title | capitalize  }}</a>
             <div class="dropdown-menu">
                 {% for post in site.categories[c] limit: 5 %}
                 <a class="dropdown-item" href="{{  post.url | relative_url }}">{{ post.title | capitalize }}</a> {% endfor %}
