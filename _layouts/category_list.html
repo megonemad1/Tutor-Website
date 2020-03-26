@@ -10,16 +10,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     <title>{{ page.title }}</title>
 </head>
-{% assign title = page.title | downcase %}
+{% assign c = page.url | split: '.' | first | split: '/' | slice: -1 | first %}
 
 <body>
     <div class="jumbotron m-2">
-        {{ content }} {{ site.categories}} {{ page.title }} {{ title }}
+        {{ content }} {{ site.categories}} {{ page.title }} {{ c }}
     </div>
     <h3>
         {{ page.title | capitalize }}</h3>
     <div class="d-flex flex-row">
-        {% for post in site.categories[title ] %}
+        {% for post in site.categories[c] %}
         <!-- Card -->
         <div class="card p-2 m-2 col-3 align-items-center justify-content-center">
             <h4 class="card-title mt-4">{{ post.title }}</h4>
