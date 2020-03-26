@@ -16,9 +16,9 @@
         {{ content }}
     </div>
     <h3>
-        Reviews</h3>
+        {{ page.title | capitalize }}</h3>
     <div class="d-flex flex-row">
-        {% for post in site.categories.Reviews %}
+        {% for post in site.categories[page.title] %}
         <!-- Card -->
         <div class="card p-2 m-2 col-3 align-items-center justify-content-center">
             <h4 class="card-title mt-4">{{ post.title }}</h4>
@@ -29,8 +29,9 @@
             <div class="card-body p-2">
 
                 <!-- Title -->
-
+                {% if post.rating and post.rating != 0 %}
                 <h5>{% for i in (1..post.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>{% endfor %}{% for i in (post.rating..4) %}<i class="fa fa-star-o" aria-hidden="true"></i>{% endfor %}</h5>
+                {% endif %}
                 <hr>
                 <!-- Text -->
                 <p class="card-text">

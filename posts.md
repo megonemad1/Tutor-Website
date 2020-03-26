@@ -1,8 +1,8 @@
 ---
 layout: category_list
-title:  "reviews"
+title:  "posts"
 ---
 
 
 
-xy
+xyz

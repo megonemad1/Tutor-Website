@@ -16,17 +16,17 @@
     <ul class="nav nav-tabs">
         {% for p in site.pages %} {% if site.categories contains p.title %}
         <li id="nav-{{p.title}}" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle {% if p.title == page.title %} active {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ p.title }}</a>
+            <a class="nav-link dropdown-toggle {% if p.title == page.title %} active {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ p.title | capitalize  }}</a>
             <div class="dropdown-menu">
-                {% for post in category[p.title][1] limit: 5 %}
-                <a class="dropdown-item" href="{{  post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% endfor %}
+                {% for post in site.categories[p.title] limit: 5 %}
+                <a class="dropdown-item" href="{{  post.url | relative_url }}">{{ post.title | capitalize }}</a> {% endfor %}
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{  category[0] | prepend: site.baseurl }}">More</a>
+                <a class="dropdown-item" href="{{  p.title | relative_url }}">More</a>
             </div>
         </li>
-        {% elsif p.title != "" %}
+        {% elsif p.title %}
         <li id="nav-{{p.title}}" class="nav-item">
-            <a class="nav-link {% if p.title == page.title %} active {% endif %}" href="{{  p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            <a class="nav-link {% if p.title == page.title %} active {% endif %}" href="{{  p.url | relative_url}}">{{ p.title | capitalize }}</a>
         </li>
         {% endif %} {% endfor %}
     </ul>
