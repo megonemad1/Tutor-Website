@@ -1,50 +1,54 @@
 --- 
-layout: default
+layout: default 
 --- 
 {% assign c = page.url | split: '.' | first | split: '/' | slice: 1 | first %}
-
-<div class="jumbotron m-2">
-    {{ content }}
-</div>
-<div class="align-items-center justify-content-center">
-    <h3>
-        {{ c | capitalize }}</h3>
-    <div class="d-flex flex-row">
-        {% for post in site.categories[c] %}
-        <!-- Card -->
-        <div class="card p-2 m-2 col-3 align-items-center justify-content-center">
-            <h4 class="card-title mt-4">{{ post.title }}</h4>
-            <!-- Button -->
-
-
-            <!-- Card content -->
-            <div class="card-body p-2">
-
-                <!-- Title -->
-                {% if post.rating and post.rating != 0 %}
-                <h5>{% for i in (1..post.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>{% endfor %}{% for i in (post.rating..4) %}<i class="fa fa-star-o" aria-hidden="true"></i>{% endfor %}</h5>
-                {% endif %}
-                <hr>
-                <!-- Text -->
-                <p class="card-text">
-                    <a href="{{  post.url | prepend: site.baseurl }}">{{ post.excerpt | truncate: 48 }}</a>
-                </p>
-
-            </div>
-
-            <!-- Card footer -->
-            <div class="rounded-bottom mdb-color lighten-3 text-center pt-0">
-                <ul class="list-unstyled list-inline font-small">
-                    <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>{{ post.date | date_to_string }}</li>
-                    {% if post.url_twitter != null %}
-                    <li class="list-inline-item pr-2"><a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></li>
-                    {% endif %} {% if post.url_github != null %}
-                    <li class="list-inline-item pr-2"><a href="{{ post.url_github }}" class="white-text" style="color:#000000;"><i class="fa fa-github pr-1"></i></a></li>
-                    {% endif %}
-                </ul>
-            </div>
-
+<div class="row">
+    <div class="col-9">
+        <div class="jumbotron m-2">
+            {{ content }}
         </div>
-        {% endfor %}
+    </div>
+    <div class="m-2">
+        <div class="align-items-center justify-content-center">
+            <h3>{{ c | capitalize }}</h3>
+            <div class="d-flex flex-row">
+                {% for post in site.categories[c] %}
+                <!-- Card -->
+                <div class="card p-2 m-2 align-items-center justify-content-center">
+                    <h4 class="card-title mt-4">{{ post.title }}</h4>
+                    <!-- Button -->
+
+
+                    <!-- Card content -->
+                    <div class="card-body p-2">
+
+                        <!-- Title -->
+                        {% if post.rating and post.rating != 0 %}
+                        <h5>{% for i in (1..post.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>{% endfor %}{% for i in (post.rating..4) %}<i class="fa fa-star-o" aria-hidden="true"></i>{% endfor %}</h5>
+                        {% endif %}
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">
+                            <a href="{{  post.url | prepend: site.baseurl }}">{{ post.excerpt | truncate: 48 }}</a>
+                        </p>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="rounded-bottom mdb-color lighten-3 text-center pt-0">
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>{{ post.date | date_to_string }}</li>
+                            {% if post.url_twitter != null %}
+                            <li class="list-inline-item pr-2"><a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></li>
+                            {% endif %} {% if post.url_github != null %}
+                            <li class="list-inline-item pr-2"><a href="{{ post.url_github }}" class="white-text" style="color:#000000;"><i class="fa fa-github pr-1"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>

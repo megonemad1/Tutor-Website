@@ -8,31 +8,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/321c8d51e5.js"></script>
-
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | relative_url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>{{ page.title }}</title>
 </head>
 
 <body>
-    <div class="col-10 m-2">
-    <ul class="nav nav-tabs">
+    <ul class="navbar navbar-expand-lg navbar-dark bg-primary mb-0 pt-0 pb-0  fixed-top">
+        <a id="nav-home" class="navbar-brand mt-0 mb-0" href="/">
+            <img src="{{ '/assets/logo.svg' | relative_url }}" width="60" height="60" alt="">
+          </a>
         {% for p in site.pages %} {% assign c = p.url | split: '.' | first | split: '/' | slice: -1 | first %} {% if site.categories contains c %}
-        <li id="nav-{{ c }}" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle {% if page.url contains c %} active {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ p.title | capitalize  }}</a>
+        <div id="nav-{{ c }}" class="nav-item dropdown">
+            <a class="nav-link navbar-brand  dropdown-toggle {% if page.url contains c %} active {% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ p.title | capitalize  }}</a>
             <div class="dropdown-menu">
                 {% for post in site.categories[c] limit: 5 %}
                 <a class="dropdown-item" href="{{  post.url | relative_url }}">{{ post.title | capitalize }}</a> {% endfor %}
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{  p.url | relative_url }}">More</a>
             </div>
-        </li>
-        {% elsif p.title %}
-        <li id="nav-{{p.title}}" class="nav-item">
-            <a class="nav-link {% if p.title == page.title %} active {% endif %}" href="{{  p.url | relative_url}}">{{ p.title | capitalize }}</a>
-        </li>
+        </div>
+        {% elsif p.title and p.url != "/" %}
+        <div id="nav-{{p.title}}" class="nav-item">
+            <a class="nav-link navbar-brand {% if p.title == page.title %} active {% endif %}" href="{{  p.url | relative_url }}">{{ p.title | capitalize }}</a>
+        </div>
         {% endif %} {% endfor %}
     </ul>
+    <div style=" background-image: url({{ '/assets/cover.jpg' | relative_url }});" class="parallax img-fluid " alt="Responsive image"></div>
+    <div class=" mx-auto p-5 bg-primary">
         {{ content }}
     </div>
 </body>
-
 </html>
