@@ -13,7 +13,7 @@
     </radialGradient>
   </defs>
   <rect id="shape0" fill="url(#gradient0)" fill-rule="evenodd"  stroke-width="0" stroke-linecap="square" width="1474.56" height="1474.56"/>
-  <text id="shape1" krita:useRichText="true" x="50%" y="50%" dominant-baseline="middle" fill="var(--logo-fg1, #82d173)" font-family="Consolas" font-size="800" font-size-adjust="0.2" font-stretch="normal" font-weight="600" kerning="0" letter-spacing="-10" text-anchor="middle" word-spacing="0">
+  <text id="shape1" krita:useRichText="true" x="50%" y="50%" dominant-baseline="middle" fill="var(--logo-fg1, #00bc8c)" font-family="Consolas" font-size="800" font-size-adjust="0.2" font-stretch="normal" font-weight="600" kerning="0" letter-spacing="-10" text-anchor="middle" word-spacing="0">
     <tspan  >[]</tspan>
   </text>
   <text id="shape2" krita:useRichText="true" x="49.5%" y="56%" dominant-baseline="middle" fill="var(--logo-fg2, #bcf51c)" font-family="Consolas" font-size="800" font-size-adjust="0.2" font-stretch="normal" font-weight="600" kerning="0" letter-spacing="-10" text-anchor="middle" word-spacing="0">

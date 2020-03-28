@@ -1,31 +1,13 @@
- /* html {
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background: "var(--logo-bg2, #764ba2)";
-    background-repeat:no-repeat;
-    background: -webkit-linear-gradient( to left top, var(--logo-bg2, #764ba2), var(--logo-bg1, #667eea));
-    background: -moz-linear-gradient( to left top, var(--logo-bg2, #764ba2), var(--logo-bg1, #667eea));
-    background: -ms-linear-gradient( to left top, var(--logo-bg2, #764ba2), var(--logo-bg1, #667eea));
-    background: -o-linear-gradient( to left top, var(--logo-bg2, #764ba2), var(--logo-bg1, #667eea));
-    background: linear-gradient( to left top, var(--logo-bg2, #764ba2), var(--logo-bg1, #667eea));
-}
-   The image used */
-body{
-    background-color: rgba(0,0, 0,0) !important;
+html {
+    background-attachment: '#375a7f';
 }
 
 .parallax {
-   
-  
     /* Set a specific height */
-    min-height: 500px; 
-  
+    min-height: 500px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}

@@ -1,7 +1,8 @@
---- 
-layout: default 
---- 
+---
+layout: default
+---
 {% assign c = page.url | split: '.' | first | split: '/' | slice: 1 | first %}
+
 <div class="row">
     <div class="col-9">
         <div class="jumbotron m-2">
@@ -41,7 +42,7 @@ layout: default
                             {% if post.url_twitter != null %}
                             <li class="list-inline-item pr-2"><a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></li>
                             {% endif %} {% if post.url_github != null %}
-                            <li class="list-inline-item pr-2"><a href="{{ post.url_github }}" class="white-text" style="color:#000000;"><i class="fa fa-github pr-1"></i></a></li>
+                            <li class="list-inline-item pr-2"><a href="{{ post.url_github }}" class="white-text" style="color:#fff;"><i class="fa fa-github pr-1"></i></a></li>
                             {% endif %}
                         </ul>
                     </div>
