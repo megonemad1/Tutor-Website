@@ -3,54 +3,65 @@ layout: default
 title: About
 ---
 
-# test
+# Rhys Puddephatt
 
-He stood and thought. The pub, he thought. Oh dear, the  pub.  He
-vaguely remembered being angry, angry about something that seemed
-important. He'd been telling  people  about  it,  telling  people
-about  it  at  great  length,  he  rather suspected: his clearest
-visual recollection was of glazed looks on other people's  faces.
-Something  about a new bypass he had just found out about. It had
-been in the pipeline for months only no one seemed to have  known
-about  it.  Ridiculous.  He  took  a swig of water. It would sort
-itself out, he'd decided, no one wanted  a  bypass,  the  council
-didn't have a leg to stand on. It would sort itself out.
+I am a self-motivated and enthusiastic programmer with 5 years' experience in agile development
+and testing in a professional environment. Passionate about developing the simplest
+solution to complex problems with creativity and integrity. always seeking to expand my
+experience and apply new practical coding skills.
 
-God what a terrible hangover it had earned him though. He  looked
-at  himself  in  the  wardrobe  mirror.  He stuck out his tongue.
-"Yellow," he thought. The word yellow wandered through  his  mind
-in search of something to connect with.
+## book recommendation
 
-Fifteen seconds later he was out of the house and lying in  front
-of a big yellow bulldozer that was advancing up his garden path.
-Mr L Prosser was, as they say, only human. In other words he  was
-a carbon-based life form descended from an ape. More specifically
-he was forty, fat and shabby and worked for  the  local  council.
-Curiously  enough, though he didn't know it, he was also a direct
-male-line  descendant  of  Genghis   Khan,   though   intervening
-generations  and  racial  mixing had so juggled his genes that he
-had  no  discernible  Mongoloid  characteristics,  and  the  only
-vestiges  left  in  Mr  L  Prosser  of his mighty ancestry were a
-pronounced stoutness about the tum and a predilection for  little
-fur hats.
+[The Pragmatic Programmer](https://pragprog.com/)
 
-He was by no means a great warrior: in  fact  he  was  a  nervous
-worried  man.  Today  he  was  particularly  nervous  and worried
-because something had gone seriously wrong with his job  -  which
-was  to  see  that Arthur Dent's house got cleared out of the way
-before the day was out.
 
-"Come off it, Mr Dent,", he said, "you can't win  you  know.  You
-can't  lie  in  front of the bulldozer indefinitely." He tried to
-make his eyes blaze fiercely but they just wouldn't do it.
 
-Arthur lay in the mud and squelched at him.
+## Technical Skills
+- Html5
+- Css & Bootstrap
+- Javascript, Jquery, Json
+- Python
+- Node.js
+- SQL
+- Java, C#
+- .Net
+- vim
+- Unity Game Engine
+- Agile
 
-"I'm game," he said, "we'll see who rusts first."
+## Professional background
+I have worked as a programmer for Osirium, a security company that develops privileged access management and task automation software. while there I worked in python maintaining existing applications and developed code fixes and enhancements.
 
-"I'm afraid you're going to have to accept it," said  Mr  Prosser
-gripping  his  fur  hat and rolling it round the top of his head,
-"this bypass has got to be built and it's going to be built!"
+in the past I have worked for The London Marathon as a Finish Build Team Member. hauling the different fences around and on occasion dealing with the general public. the exacting schedules and site plans for the London Marathon are impressive it really was a marvel what got done in such a short time.
 
-"First I've heard of it," said Arthur,  "why's  it  going  to  be
-built?"
+## Past And Future Projects
+### Mob book
+a number of years ago I designed a collaborative story-making website based in Python, using flask as the framework and sqlite to store user data https://github.com/megonemad1/MobBook it was an early project I created. 
+
+it's a website designed to let users create the next sentence in a story. it had some problems to overcome, primarily i didn't want to have a authentication system but i did want a rating system, this lead to creating a combination of mitigations to prevent repeat rating of story parts.
+
+Currently designing a story framework for game development, capable of creating
+dynamic game states. I have delivered a presentation on this game to a local
+technology meetup group called Geek Night where I detailed my development
+process.
+
+I have five years’ experience with using Linux based operating systems for
+development. Using vim and the upstart functionality of Ubuntu, I have created
+scripts to aid me in time management. I have also set up a server which pulls logs
+from the family's smart boiler to help my dad understand why we have no hot water.
+
+## Hobbies and Interests
+### Game Development
+I enjoy flexing my programming and design skills by creating games in my spare time. I participated in
+several Southampton Game Jams and in 2017 my team won the Popular Game Award for our entry, The Chinese Room. I enjoyed working on both code and art design during the game jam.
+
+### Canal Boating
+I am a qualified skipper having achieved the Certificate in Community Boat Management (CCBM). This qualification is about managing a boat crew and members of the public on a trip boat, including taking charge during an emergency and the preparation required for such events.
+
+### Blacksmithing
+I've recently taken up blacksmithing and have built my own workshop. My most recent projects were a steel bracelet and a two handed Damascus steel cake knife for my sisters' wedding. I have spent a couple of months helping out at a local blacksmiths where I learnt how to weld and other metal fabrication techniques.
+
+## Contact
+- Email: coming soon
+- [Personal Github](github.com/megonemad1)
+- [Hacker Rank](hackerrank.com/rhys_puddephatt1)
