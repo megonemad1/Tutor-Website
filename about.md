@@ -28,7 +28,7 @@ experience and apply new practical coding skills.
 - Agile
 
 ## Professional background
-I have worked as a programmer for Osirium, a security company that develops privileged access management and task automation software. while there I worked in python maintaining existing applications and developed code fixes and enhancements.
+I have worked as a programmer for a security company that develops privileged access management and task automation software. while there I worked in python maintaining existing applications and developed code fixes and enhancements.
 
 in the past I have worked for The London Marathon as a Finish Build Team Member. hauling the different fences around and on occasion dealing with the general public. the exacting schedules and site plans for the London Marathon are impressive it really was a marvel what got done in such a short time.
 
@@ -43,9 +43,7 @@ dynamic game states. I have delivered a presentation on this game to a local
 technology meetup group called Geek Night where I detailed my development
 process.
 
-I have five years’ experience with using Linux based operating systems for
-development. Using vim and the upstart functionality of Ubuntu, I have created
-scripts to aid me in time management. I have also set up a server which pulls logs
+another project based I created on Linux operating system using vim and the upstart functionality of Ubuntu, I created scripts to aid me in time management as well as setting up a server which pulls logs
 from the family's smart boiler to help my dad understand why we have no hot water.
 
 ## Hobbies and Interests
