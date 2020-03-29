@@ -12,9 +12,7 @@ experience and apply new practical coding skills.
 
 ## book recommendation
 
-[The Pragmatic Programmer](https://pragprog.com/)
-
-
+- [The Pragmatic Programmer](https://pragprog.com/)
 
 ## Technical Skills
 - Html5
