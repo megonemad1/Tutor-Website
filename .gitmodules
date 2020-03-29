@@ -1,0 +1,3 @@
+[submodule "reviews/_posts/templates"]
+	path = reviews/_posts/templates
+	url = https://github.com/megonemad1/review_template.git
