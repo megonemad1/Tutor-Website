@@ -8,3 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.rails {
+    border-right: 1em solid #444;
+    border-left: 1em solid #444;
+}
