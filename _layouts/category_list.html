@@ -3,13 +3,13 @@ layout: default
 ---
 {% assign c = page.url | split: '.' | first | split: '/' | slice: 1 | first %}
 
-<div class="row">
-    <div class="col-9">
+<div class="d-flex flex-row row">
+    <div class="col-12">
         <div class="jumbotron pt-4 pb-2 m-2">
             {{ content }}
         </div>
     </div>
-    <div class="m-2">
+    <div class="col-5 m-2">
         <div class="align-items-center justify-content-center">
             <h3>{{ c | capitalize }}</h3>
             <div class="d-flex flex-row">
