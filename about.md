@@ -3,7 +3,10 @@ layout: default
 title: About
 ---
 
+![Rhys Puddephatt](/assets/profile.jpg){:class="img-fluid p-1 img-thumbnail col-3"}
+
 # Rhys Puddephatt
+
 
 I am a self-motivated and enthusiastic programmer with 5 years' experience in agile development
 and testing in a professional environment. Passionate about developing the simplest
@@ -26,6 +29,16 @@ experience and apply new practical coding skills.
 - vim
 - Unity Game Engine
 - Agile
+
+## Industry Certifications: 
+- Microsoft Technical Associate 2013 
+- Software Testing Fundamentals  
+- Software Development Fundamentals  
+- Database Administration Fundamentals  
+- Windows Operating System Fundamentals  
+- HTML5 Application Development Fundamentals  
+- Cisco Certified Network Associate 1  
+- 2013 Duke of York Gold Award (Technical Education)
 
 ## Professional background
 I have worked as a programmer for a security company that develops privileged access management and task automation software. while there I worked in python maintaining existing applications and developed code fixes and enhancements.

@@ -2,145 +2,18 @@
 layout: home
 title: Home
 ---
+Capable of tutoring multiple languages including: Java, c#, Unity Game Development, python, git. 
 
-# Home Page
+During tutorials I work with students to create simple projects that help them understand programming. my focus is in getting my students to start coding and build up there confidence to create and complete projects on there own. my one on one tutorials work at the pace of the students and can be student lead improving engagement. 
 
-The Hitch Hiker's Guide to the Galaxy 
+What To Expect:
+Tutoring programming for beginners, classes designed to ground students and help them work gain experience and work on their own projects, i will teach basic use of git based source control and IDE setup. all projects worked on during sessions will be released open source on git, with the GNU AGPLv3 licence.
 
-for Jonny Brock and Clare Gorst 
-and all other Arlingtoniansfor tea, sympathy, and a sofa
+Software used:
+- Discord for screen sharing and VOIP chat.
+- Visual Studio
+- The relevant programming language compiler and tools
+- git source control
 
-
-
-Far out in the uncharted backwaters of the unfashionable  end  of
-the  western  spiral  arm  of  the Galaxy lies a small unregarded
-yellow sun.
-
-Orbiting this at a distance of roughly ninety-two  million  miles
-is  an  utterly insignificant little blue green planet whose ape-
-descended life forms are so amazingly primitive that  they  still
-think digital watches are a pretty neat idea.
-
-This planet has - or rather had - a problem, which was this: most
-of  the  people  on  it were unhappy for pretty much of the time.
-Many solutions were suggested for this problem, but most of these
-were  largely  concerned with the movements of small green pieces
-of paper, which is odd because on the whole it wasn't  the  small
-green pieces of paper that were unhappy.
-
-And so the problem remained; lots of the people  were  mean,  and
-most of them were miserable, even the ones with digital watches.
-
-Many were increasingly of the opinion that they'd all made a  big
-mistake  in  coming  down  from the trees in the first place. And
-some said that even the trees had been a bad move,  and  that  no
-one should ever have left the oceans.
-
-And then, one Thursday, nearly two thousand years after  one  man
-had  been nailed to a tree for saying how great it would be to be
-nice to people for a change, one girl sitting on  her  own  in  a
-small  cafe  in  Rickmansworth suddenly realized what it was that
-had been going wrong all this time, and she finally knew how  the
-world  could  be  made  a  good and happy place. This time it was
-right, it would work, and no one would  have  to  get  nailed  to
-anything.
-
-Sadly, however, before she could get to a phone  to  tell  anyone-
-about  it,  a  terribly stupid catastrophe occurred, and the idea
-was lost forever.
-
-This is not her story.
-
-But it is the story of that terrible stupid catastrophe and  some
-of its consequences.
-
-It is also the story of a book, a book called The  Hitch  Hiker's
-Guide  to  the  Galaxy  -  not  an Earth book, never published on
-Earth, and until the terrible catastrophe occurred, never seen or
-heard of by any Earthman.
-
-Nevertheless, a wholly remarkable book.
-
-in fact it was probably the most remarkable book ever to come out
-of  the  great  publishing  houses  of  Ursa  Minor - of which no
-Earthman had ever heard either.
-
-Not only is it a wholly remarkable book,  it  is  also  a  highly
-successful  one  -  more  popular  than  the  Celestial Home Care
-Omnibus, better selling than Fifty More  Things  to  do  in  Zero
-Gravity, and more controversial than Oolon Colluphid's trilogy of
-philosophical blockbusters Where God Went  Wrong,  Some  More  of
-God's Greatest Mistakes and Who is this God Person Anyway?
-
-In many of the more relaxed civilizations on  the  Outer  Eastern
-Rim of the Galaxy, the Hitch Hiker's Guide has already supplanted
-the great Encyclopedia Galactica as the  standard  repository  of
-all  knowledge  and  wisdom, for though it has many omissions and
-contains much that is apocryphal, or at least wildly  inaccurate,
-it  scores  over the older, more pedestrian work in two important
-respects.
-
-First, it is slightly cheaper; and  secondly  it  has  the  words
-Don't Panic inscribed in large friendly letters on its cover.
-
-But the story of this terrible, stupid Thursday, the story of its
-extraordinary   consequences,   and   the  story   of  how  these
-consequences are inextricably intertwined  with  this  remarkable
-book begins very simply.
-
-It begins with a house.
-
-
-
-The house stood on a slight rise just on the edge of the village.
-It  stood  on  its  own  and  looked  over a broad spread of West
-Country farmland. Not a remarkable house by any means  -  it  was
-about  thirty  years old, squattish, squarish, made of brick, and
-had four windows set in the front of a size and proportion  which
-more or less exactly failed to please the eye.
-
-The only person for whom the house was in  any  way  special  was
-Arthur  Dent, and that was only because it happened to be the one
-he lived in. He had lived in it for about three years, ever since
-he  had  moved  out  of  London  because  it made him nervous and
-irritable. He was about thirty as well,  dark  haired  and  never-
-quite at ease with himself. The thing that used to worry him most
-was the fact that people always used  to  ask  him  what  he  was
-looking  so  worried  about.  He  worked  in local radio which he
-always used to tell his friends was a lot more  interesting  than
-they  probably  thought. It was, too - most of his friends worked
-in advertising.
-
-It hadn't properly registered with Arthur that the council wanted
-to knock down his house and build an bypass instead.
-
-At eight o'clock on Thursday  morning  Arthur  didn't  feel  very
-good.  He  woke  up blearily, got up, wandered blearily round his
-room, opened a window, saw a bulldozer, found his  slippers,  and
-stomped off to the bathroom to wash.
-
-Toothpaste on the brush - so. Scrub.
-
-Shaving mirror - pointing at the ceiling. He adjusted it.  For  a
-moment  it  reflected  a  second  bulldozer  through the bathroom
-window. Properly adjusted, it reflected Arthur  Dent's  bristles.
-He shaved them off, washed, dried, and stomped off to the kitchen
-to find something pleasant to put in his mouth.
-
-Kettle, plug, fridge, milk, coffee. Yawn.
-
-The word bulldozer wandered through his  mind  for  a  moment  in
-search of something to connect with.
-
-The bulldozer outside the kitchen window was quite a big one.
-
-He stared at it.
-
-"Yellow," he thought and stomped off back to his bedroom  to  get
-dressed.
-
-Passing the bathroom he stopped to drink a large glass of  water,
-and  another.  He began to suspect that he was hung over. Why was
-he hung over? Had he been drinking the night before? He  supposed
-that  he must have been. He caught a glint in the shaving mirror.
-"Yellow," he thought and stomped on to the bedroom.
+Sessions Available! 
+Book Now!
