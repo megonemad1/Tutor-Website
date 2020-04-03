@@ -1,3 +1,12 @@
+PATH
+  remote: .
+  specs:
+    jekyll-theme-hydeout (4.1.0)
+      jekyll (>= 3.6, < 5.0)
+      jekyll-feed (~> 0.6)
+      jekyll-gist (~> 1.4)
+      jekyll-paginate (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -236,6 +245,7 @@ GEM
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
+    wdm (0.1.1)
     zeitwerk (2.3.0)
 
 PLATFORMS
@@ -243,6 +253,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-theme-hydeout!
+  wdm (~> 0.1)
 
 BUNDLED WITH
    2.1.4
