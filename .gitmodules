@@ -1,0 +1,6 @@
+[submodule "Student Reviews/_posts/templates"]
+	path = Student Reviews/_posts/templates
+	url = https://github.com/megonemad1/tutor_review.git
+[submodule "Student Reviews/_posts/XandraGates"]
+	path = Student Reviews/_posts/XandraGates
+	url = https://github.com/XandraGates/review_template.git
