@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: index
 title: Home
 ---
 Capable of tutoring multiple languages including: Java, c#, Unity Game Development, python, git. 

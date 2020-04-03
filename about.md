@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: About
+sidebar_link: true
 ---
 
 ![Rhys Puddephatt](/assets/profile.jpg){:class="img-fluid p-1 img-thumbnail col-3"}
@@ -8,16 +9,15 @@ title: About
 # Rhys Puddephatt
 
 
-I am a self-motivated and enthusiastic programmer with 5 years' experience in agile development
+Self-motivated and enthusiastic programmer with 5 years' experience in agile development
 and testing in a professional environment. Passionate about developing the simplest
 solution to complex problems with creativity and integrity. always seeking to expand my
 experience and apply new practical coding skills.
 
-## book recommendation
-
-- [The Pragmatic Programmer](https://pragprog.com/)
+[//]: # Need to make this relevant to tutoring and why people should hire you as a tutor, e.g. what experience do you have as a tutor, what is your teaching style, how you know you've done a good job (student performance monitoring / student relationships).
 
 ## Technical Skills
+[//]: # Break this up into languages (front-end & back-end - explain in brief why your tutee may want to learn a specific language), frameworks and software.
 - Html5
 - Css & Bootstrap
 - Javascript, Jquery, Json
@@ -69,6 +69,12 @@ I am a qualified skipper having achieved the Certificate in Community Boat Manag
 
 ### Blacksmithing
 I've recently taken up blacksmithing and have built my own workshop. My most recent projects were a steel bracelet and a two handed Damascus steel cake knife for my sisters' wedding. I have spent a couple of months helping out at a local blacksmiths where I learnt how to weld and other metal fabrication techniques.
+
+## Book Recommendation
+
+- [The Pragmatic Programmer](https://pragprog.com/)
+
+[//]: # Need more book recommendations or beginner resources (w3 schools)
 
 ## Contact
 - Email: coming soon
