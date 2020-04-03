@@ -4,7 +4,7 @@ title: About
 sidebar_link: true
 ---
 
-![Rhys Puddephatt](/assets/profile.jpg){:class="img-fluid p-1 img-thumbnail col-3"}
+![Rhys Puddephatt](/assets/profile.jpg){:width="300px"}
 
 # Rhys Puddephatt
 
