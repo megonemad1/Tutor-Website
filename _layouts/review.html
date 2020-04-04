@@ -1,18 +1,26 @@
----
-layout: category_list
+--- 
+layout: default 
 ---
 
-<h1 >{{ page.title }}</h1>
-<p class="mb-2">{% for i in (1..page.rating) limit: 5 %}<i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>{% endfor %}{% for i in (page.rating..4) %}<i class="fa fa-star-o " aria-hidden="true "></i>{% endfor %}</p>
-<hr>
-<p>{{ page.content }}</p>
-<div class="rounded-bottom mdb-color lighten-3 text-center pt-4">
-    <ul class="list-unstyled list-inline font-small">
-        <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>{{ page.date | date_to_string }}</li>
-        {% if page.url_twitter != null %}
-        <li class="list-inline-item pr-2"><a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></li>
-        {% endif %} {% if page.url_github != null %}
-        <li class="list-inline-item pr-2"><a href="{{ post.url_github }}" class="white-text" style="color:#fff;"><i class="fa fa-github pr-1"></i></a></li>
-        {% endif %}
-    </ul>
+<header>
+    <h1 class="post-title">{{ page.title }}</h1>
+</header>
+<div class="content">
+    {% include post-meta.html post=page %}
+
+    <div class="post-body">
+        <p class="col-2">{% for i in (1..page.rating) limit: 5 %}
+          <i class="fa fa-star" aria-hidden="true" style="color: #ffcc00;"></i>
+          {% endfor %}
+          {% for i in (page.rating..4) %}
+          <i class="fa fa-star-o " aria-hidden="true "></i>
+          {% endfor %}</p> 
+          {{ content }}
+          <p> {% if page.url_twitter != null %}
+            <a href="{{post.url_twitter}}" class="white-text"><i class="fa fa-twitter pr-1"></i></a> {% endif %} {% if page.url_github != null %}
+            <a href="{{ post.url_github }}" class="white-text" style="color:rgb(53, 53, 53);"><i class="fa fa-github pr-1"></i></a> {% endif %}</p>
+        {% include post-tags.html post=page %}
+    </div>
+
+    {% include comments.html %} {% include related_posts.html %}
 </div>
