@@ -2,6 +2,8 @@
 layout: index
 title: Home
 ---
+<div style=" background-image: url({{cover_img}});" class="parallax img-fluid " alt="Responsive image"></div>
+![Rhys Puddephatt](/assets/profile.jpg){:width="300px"}
 Capable of tutoring multiple languages including: Java, c#, Unity Game Development, python, git. 
 
 During tutorials I work with students to create simple projects that help them understand programming. my focus is in getting my students to start coding and build up there confidence to create and complete projects on there own. my one on one tutorials work at the pace of the students and can be student lead improving engagement. 
