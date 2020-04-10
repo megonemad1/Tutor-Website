@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "D&D Coin Converter"
+comments: true
 tags:
     - python
     - web scraping
