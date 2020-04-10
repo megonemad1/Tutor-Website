@@ -1,6 +1,14 @@
 <div class="post-meta">
-  <span class="post-date">{{ include.post.date | date_to_string }}</span>
-  <span class="post-categories">
+   {% if include.post.rating != null %}<span class="post-rating">{% for i in (1..include.post.rating) limit: 5 %}
+  <i class="fa fa-star" aria-hidden="true" style="color: #ffcc00 !important;"></i>
+  {% endfor %}
+  {% for i in (include.post.rating..4) %}
+  <i class="fa fa-star-o " aria-hidden="true "></i>
+  {% endfor %}</span>{% endif %}
+ <span class="post-date">{{ include.post.date | date_to_string }}</span>
+ {% if include.post.url_twitter != null %}<span class="post-twitter"><a href="{{ include.post.url_twitter }}" class="white-text"><i class="fa fa-twitter pr-1"></i></a></span> {% endif %} 
+ {% if include.post.url_github != null %}<span class="post-github"><a href="{{ include.post.url_github }}" class="white-text" style="color:rgb(53, 53, 53);"><i class="fa fa-github pr-1"></i></a></span> {% endif %}
+<span class="post-categories">
     {% for category in include.post.categories %}
       &bull;
 
