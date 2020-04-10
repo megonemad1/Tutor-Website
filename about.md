@@ -77,6 +77,8 @@ I've recently taken up blacksmithing and have built my own workshop. My most rec
 [//]: # Need more book recommendations or beginner resources (w3 schools)
 
 ## Contact
-- Email: coming soon
-- [Personal Github](github.com/megonemad1)
+- Email: [c-0-de+tutor@outlook.com](mailto:c-0-de+tutor@outlook.com)
+- Github:
+    - [Personal](github.com/megonemad1)
+    - [Tutor](https://github.com/C-0-de)
 - [Hacker Rank](hackerrank.com/rhys_puddephatt1)
