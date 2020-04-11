@@ -16,7 +16,8 @@ baseurl:          '/Tutor-Website'
 
 author:
   name:           'Rhys Puddephatt'
-  twitter:            https://twitter.com/
+  twitter:            https://twitter.com/C0de63990029
+
 
 paginate:         5
 # paginate_path:    '/page:num'
