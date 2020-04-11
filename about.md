@@ -8,27 +8,48 @@ sidebar_link: true
 
 # Rhys Puddephatt
 
+## Contact
+- Email: [c-0-de+tutor@outlook.com](mailto:c-0-de+tutor@outlook.com)
+- Github:
+    - [Personal](github.com/megonemad1)
+    - [Tutor](https://github.com/C-0-de)
+- [Hacker Rank](hackerrank.com/rhys_puddephatt1)
+- [twitter](https://twitter.com/C0de63990029)
+- [Twitch](https://www.twitch.tv/me_gone_mad1)
 
-Self-motivated and enthusiastic programmer with 5 years' experience in agile development
+I Self-motivated and enthusiastic programmer with 5 years' experience in agile development
 and testing in a professional environment. Passionate about developing the simplest
 solution to complex problems with creativity and integrity. always seeking to expand my
 experience and apply new practical coding skills.
+
+while tutoring I work with students to create simple projects that help them understand programming. my focus is in getting my students to start coding and build up there confidence to create and complete projects on there own.
+
+my [one on one tutorials]({{ "/booking.html" | relative_url }}) work at the pace of the students and can be student lead improving engagement.
+
+meanwhile my [Twitch](https://www.twitch.tv/me_gone_mad1) tutorial streams are more around a communal creation and programing experience, during streams viewers are encouraged to suggest features and ideas. 
 
 [//]: # Need to make this relevant to tutoring and why people should hire you as a tutor, e.g. what experience do you have as a tutor, what is your teaching style, how you know you've done a good job (student performance monitoring / student relationships).
 
 ## Technical Skills
 [//]: # Break this up into languages (front-end & back-end - explain in brief why your tutee may want to learn a specific language), frameworks and software.
+### main tutored subjects
+#### Python
+a scripting language, has a high versatility for a lot of projects from data manipulation to task automation. while possible its less focused on graphical interactions. 
+#### C# .Net
+a compiled language, far easier to create basic windows forms using the editor. has a more ridged syntax however the computer can offer more help as your writing your code.
+#### C# Unity Game Engine
+using unity to make games is fun and can be run on many platforms, whilst its designed as a game engine you could use it and the skills learnt to make just about anything you could with other options.
+#### Java
+a strong industry standard language, has a lot of similarities to c# and is just as versatile
+### other skills
 - Html5
 - Css & Bootstrap
 - Javascript, Jquery, Json
-- Python
 - Node.js
 - SQL
-- Java, C#
-- .Net
 - vim
-- Unity Game Engine
 - Agile
+- git
 
 ## Industry Certifications: 
 - Microsoft Technical Associate 2013 
@@ -49,7 +70,7 @@ in the past I have worked for The London Marathon as a Finish Build Team Member.
 ### Mob book
 a number of years ago I designed a collaborative story-making website based in Python, using flask as the framework and sqlite to store user data https://github.com/megonemad1/MobBook it was an early project I created. 
 
-it's a website designed to let users create the next sentence in a story. it had some problems to overcome, primarily i didn't want to have a authentication system but i did want a rating system, this lead to creating a combination of mitigations to prevent repeat rating of story parts.
+it's a website designed to let users create the next sentence in a story. it had some problems to overcome, primarily I didn't want to have a authentication system but I did want a rating system, this lead to creating a combination of mitigations to prevent repeat rating of story parts.
 
 Currently designing a story framework for game development, capable of creating
 dynamic game states. I have delivered a presentation on this game to a local
@@ -71,14 +92,9 @@ I am a qualified skipper having achieved the Certificate in Community Boat Manag
 I've recently taken up blacksmithing and have built my own workshop. My most recent projects were a steel bracelet and a two handed Damascus steel cake knife for my sisters' wedding. I have spent a couple of months helping out at a local blacksmiths where I learnt how to weld and other metal fabrication techniques.
 
 ## Book Recommendation
+most beginner programing books and resources are *assuming they are still in date* offering similar experience and their effectiveness is based on effort put in, as such find one which you find easy to follow (as this is different for everyone I cant be more specific)
 
 - [The Pragmatic Programmer](https://pragprog.com/)
+after the basics this is one of the best books to improve your programing skill.
 
 [//]: # Need more book recommendations or beginner resources (w3 schools)
-
-## Contact
-- Email: [c-0-de+tutor@outlook.com](mailto:c-0-de+tutor@outlook.com)
-- Github:
-    - [Personal](github.com/megonemad1)
-    - [Tutor](https://github.com/C-0-de)
-- [Hacker Rank](hackerrank.com/rhys_puddephatt1)
