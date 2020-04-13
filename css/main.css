@@ -1,14 +1,4 @@
-
-.parallax {
-    /* Set a specific height */
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.rails {
-    border-right: 1em solid #444;
-    border-left: 1em solid #444;
+.logo{
+color:"#82d173";
+font-family:"Consolas";
 }
