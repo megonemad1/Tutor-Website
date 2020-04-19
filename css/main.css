@@ -1,4 +1,11 @@
-.logo{
-color:"#82d173";
-font-family:"Consolas";
+.logo {
+    font-family: "Consolas" !important;
+    letter-spacing: -.5rem !important;
+}
+
+.dark_green {
+    color: #82d173 !important;
+}
+.light_green {
+    color: #bcf51c    !important;
 }
