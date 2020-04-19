@@ -9,13 +9,14 @@ layout: default
 
   {% for post in paginator.posts %}
   <article class="post-body">
-    <h2 class="post-title">
+    <h2 class="post-title center">
       <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </h2>
+    <div class="center">
     {% include post-meta.html post=post %}
-
+    </div>
     {% if post.excerpt %}
       {{ post.excerpt }}
     {% else %}
