@@ -67,14 +67,14 @@ next, I need to get the coins back into separate parts again, to undo the proces
 
 so the approach I took was to work out how many of each coin I could fit into the current total, save it, then adust the total by that much.
 some quick code features:
-- ill need to look at each type of coin and the value compared to the base.
+- I'll need to look at each type of coin and the value compared to the base.
 - the current total will need to be remembered over the whole loop
 - the coin totals I have worked out will need to be saved for after im done looking though coins
 
-    I want to get_denominations. ill need to know about: currency_index (the value of each coin) and c (current total coin value)
+    I want to get_denominations. I'll need to know about: currency_index (the value of each coin) and c (current total coin value)
         I will need to remember the coins to return, rval
         look at each coin_type and coin_value in currency_index, and for each one:
-            I need to remember how many coins of the type im looking at I can get out of c, ill name this denom
+            I need to remember how many coins of the type im looking at I can get out of c, I'll name this denom
             I need to put denom into rval
             I need to remove the value of denom from c for future iterations
         when thats done
@@ -90,7 +90,7 @@ or in actual code
             c-=denom*self.currency_index[k]
         return rval
 
-this is a simple premise, however the stated implementation has a flaw, python dictionary's aren't sorted, even if they where they would be sorted by key not by value. but the value in this context is the worth of the coin, and for this to work I need to look at the biggest coins first, otherwise in worst case where the base coin is looked at first.... ill just get the current total... entirely in the base coin.
+this is a simple premise, however the stated implementation has a flaw, python dictionary's aren't sorted, even if they where they would be sorted by key not by value. but the value in this context is the worth of the coin, and for this to work I need to look at the biggest coins first, otherwise in worst case where the base coin is looked at first.... I'll just get the current total... entirely in the base coin.
 to fix this I add a sort function call that looks at the item value. in this case I made it negative as sorted by default makes it ascending and making the value negative flips that to descending  
 
     def get_denominations(self, c):
