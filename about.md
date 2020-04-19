@@ -4,7 +4,7 @@ title: About
 sidebar_link: true
 ---
 
-![Rhys Puddephatt](/assets/profile.jpg){:width="300px"}
+![Rhys Puddephatt](/assets/profile.jpg){: class="profile center"}
 
 # Rhys Puddephatt
 
@@ -32,7 +32,7 @@ meanwhile my [Twitch](https://www.twitch.tv/me_gone_mad1) tutorial streams are m
 
 ## Technical Skills
 [//]: # Break this up into languages (front-end & back-end - explain in brief why your tutee may want to learn a specific language), frameworks and software.
-### main tutored subjects
+### Key tutored subjects
 #### Python
 a scripting language, has a high versatility for a lot of projects from data manipulation to task automation. while possible its less focused on graphical interactions. 
 #### C# .Net
