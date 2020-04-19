@@ -5,7 +5,14 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
+  {% if page.excerpt %}
+    <meta name="description" content= "{{ page.excerpt  | strip_html | escape | truncatewords: 32 }}" /> 
+  {% else %}
+    {% if site.tagline and site.description %}
+      <meta name="description" content= "{{ site.tagline }} {{ site.description }}" /> 
+    {% endif %}
+  {% endif %}
+  <meta name="robots" content= "index, follow">
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
