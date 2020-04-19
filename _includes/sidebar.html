@@ -1,11 +1,48 @@
 <div id="sidebar">
+  <svg  width="200" height="200" viewBox="0 0 240 240"> 
+         
+    <clipPath id="imgClipCircle">
+        <circle cx="100" cy="100" r="98"/>
+    </clipPath>
+    <filter id="shadow">
+        <feDropShadow dx="1" dy="1" stdDeviation="3"/>
+      </filter> 
+      <circle cx="100" cy="100" r="80" 
+   stroke="#fff" 
+   stroke-width="40" 
+   fill="#fff" 
+   />
+   <image width="200" height="200" clip-path="url(#imgClipCircle)" xlink:href="{{ '/assets/profile.jpg' | relative_url }}"></image>
+  
+   <circle cx="150" cy="180" r="42" 
+            stroke="#fff" 
+            stroke-width="3" 
+            fill="#d50951"
+            filter="url(#shadow)"
+            />
+            <text x="150" y="194" 
+            text-anchor="middle" 
+            font-family="Roboto, sans-serif"
+            font-weight="bold"
+            fill="#fff" 
+            font-size="2em"
+            >£15
+      </text>
+      <text x="195" y="194" 
+      font-family="Roboto, sans-serif"
+      font-weight="bold"
+      fill="#fff" 
+      font-size="1.2em"
+      >/hr
+</text>
+</svg>
   <header>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ "/" | relative_url }}" class="logo">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
         {% endunless %}
-        {{ site.title }}
+        C<span class="dark_green">[</span><span class="light_green">0</span><span class="dark_green">]</span>.de
       </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
