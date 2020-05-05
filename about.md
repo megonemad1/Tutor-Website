@@ -10,9 +10,9 @@ sidebar_link: true
 
 ## Contact
 - Email: [c-0-de+tutor@outlook.com](mailto:c-0-de+tutor@outlook.com)
-- Live Chat: [Facebook](m.me/111657817202965)
+- Live Chat: [Facebook](https://m.me/111657817202965)
 - Github:
-    - [Personal](github.com/megonemad1)
+    - [Personal](https://github.com/megonemad1)
     - [Tutor](https://github.com/C-0-de)
 - [Hacker Rank](hackerrank.com/rhys_puddephatt1)
 - [twitter](https://twitter.com/C0de63990029)
