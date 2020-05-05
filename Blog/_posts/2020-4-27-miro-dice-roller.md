@@ -53,4 +53,4 @@ the next snag I hit, was that the context menu. The event handler only hands me 
 ## what we have now
 a button that will get the text of a Miro object, pull dice notation between brackets, attempt to use it to roll. Then insert the result where the notation was, keeping the notation for future rolls. 
 
-code can be found [here] (https://github.com/megonemad1/MiroDicePostIt)
+code can be found [here](https://github.com/megonemad1/MiroDicePostIt)
