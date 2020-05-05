@@ -7,7 +7,7 @@ tags:
     - web scraping
     - Dungeons&Dragons
 ---
-so this project starts like many others. With a slight annoyance and enough free time to hack together a solution. todays problem arose whilst playing Dungeons & Dragons. I wanted to buy a shops worth of pastries; being D&D these where of course the most evil and unholy of pastries. The Shopkeeper asked me to pay, I know weird how even in fantasy we bring our problems with us. on the plus side in this game coin was easy to come by, but that poses other issues. the conversion rates of each coin while consistent, never seem to stick with me. I struggle to convert copper, electrum, silver, gold, and platinum in my head. I also had a lot of platinum, the big bucks coin. but no copper, which I needed to buy simple goods like pastries. so there I am, in the middle of the game doing fast money conversion trying to wok out change. the online sheet I use kindly tells me the worth of each coin, but doesn't work it all out for me.
+so this project starts like many others. With a slight annoyance and enough free time to hack together a solution. Todays problem arose whilst playing Dungeons & Dragons. I wanted to buy a shops worth of pastries; being D&D these where of course the most evil and unholy of pastries. The Shopkeeper asked me to pay, I know weird how even in fantasy we bring our problems with us. On the plus side in this game coin was easy to come by, but that poses other issues. The conversion rates of each coin while consistent, never seem to stick with me. I struggle to convert copper, electrum, silver, gold, and platinum in my head. I also had a lot of platinum, the big bucks coin. But no copper, which I needed to buy simple goods like pastries. So there I am, in the middle of the game doing fast money conversion trying to wok out change. The online sheet I use kindly tells me the worth of each coin, but doesn't work it all out for me.
 
 ### the problem
 
@@ -29,7 +29,7 @@ I wanted to plug in the money I have, then tell it what change I want to make. I
 
 ### planed method
 
-so after some thought I decided I could set a map of coins to their value. by asserting that one coin was the lowest value and so was worth 1 in relation to all other coins. convert all coins to this base for use in calculations. so silver coin is worth 10 copper, copper being the smallest I can say copper is worth 1.
+so after some thought I decided I could set a map of coins to their value. By asserting that one coin was the lowest value and so was worth 1 in relation to all other coins. Convert all coins to this base for use in calculations. So silver coin is worth 10 copper, copper being the smallest I can say copper is worth 1.
 
 this seems so obvious, I'm probably making it more confusing.
 
@@ -41,9 +41,9 @@ so converting a arbitrary pile of coins into copper, how do I tell a computer to
                 cp+=self.currency_index[k]*v
         return cp
 
-is this complete? well it will convert coins it knows about fine, but what if I typo, or I get a coin from a strange and dark land. its to brittle.
+is this complete? well it will convert coins it knows about fine, but what if I typo, or I get a coin from a strange and dark land. Its to brittle.
 
-how can I fix this? well, for starters the coins I'm handed are less important than the types of coins i know about. so lets start by only looking at those:
+how can I fix this? well, for starters the coins I'm handed are less important than the types of coins i know about. So lets start by only looking at those:
 
 
     def denominations_to_base(self, purse):
@@ -52,7 +52,7 @@ how can I fix this? well, for starters the coins I'm handed are less important t
                 cp+=purse[k]*v
         return cp
 
-this is better but still has its issues. now if I'm not handed a coin I know about, the program will crash as it looks for a coin it wasn't given. a simple fix, the computer has to ask itself "do i have a coin type" before it starts trying to do something with it.
+this is better but still has its issues. Now if I'm not handed a coin I know about, the program will crash as it looks for a coin it wasn't given. A simple fix, the computer has to ask itself "do i have a coin type" before it starts trying to do something with it.
 
 
     def denominations_to_base(self, purse):
@@ -62,13 +62,13 @@ this is better but still has its issues. now if I'm not handed a coin I know abo
                 cp+=purse[k]*v
         return cp
 
-next, I need to get the coins back into separate parts again, to undo the process I have just made. it should be some function foo such that:
+next, I need to get the coins back into separate parts again, to undo the process I have just made. It should be some function foo such that:
 
     >>> x == foo(denominations_to_base(x))
     True
     >>> ▯
 
-so the approach I took was to work out how many of each coin I could fit into the current total. save it, then adjust the total by that much. some quick code features:
+so the approach I took was to work out how many of each coin I could fit into the current total. Save it, then adjust the total by that much. Some quick code features:
 -   I'll need to look at each type of coin and the value compared to the base.
 -   i will need to remember current total over the whole loop, so i can reduce the pile as I go.
 -   i need to save the coin totals I have worked out for after I'm done looking though coins
@@ -86,7 +86,7 @@ or in code
             c-=denom*self.currency_index[k]
         return rval
 
-this is a simple premise, yet the stated implementation has a flaw. python dictionary's aren't sorted, even if they where it would by key not by value. but the value in this context is the worth of the coin, and for this to work I need to look at the biggest coins first. otherwise in worst case where the base coin is first.... I'll get the current total... entirely in the base coin. who wants £1000 in pennies. to fix this I add a sort function call that looks at the coins' value. in this case I made it negative, as sorted by default makes it ascending. making the value negative flips that to descending. there is probably a fancy python spell I could cast to reverse the order, but *-1 is less googling.
+this is a simple premise, yet the stated implementation has a flaw. Python dictionary's aren't sorted, even if they where it would by key not by value. But the value in this context is the worth of the coin, and for this to work I need to look at the biggest coins first. Otherwise in worst case where the base coin is first.... I'll get the current total... Entirely in the base coin. Who wants £1000 in pennies. To fix this I add a sort function call that looks at the coins' value. In this case I made it negative, as sorted by default makes it ascending. Making the value negative flips that to descending. There is probably a fancy python spell I could cast to reverse the order, but *-1 is less googling.
 
     def get_denominations(self, c):
         rval={}
@@ -96,7 +96,7 @@ this is a simple premise, yet the stated implementation has a flaw. python dicti
             c-=denom*self.currency_index[k]
         return rval
 
-you may have noticed these are in a class methods. the use of self as a parameter. I did this so I could group the two functions with the currency index. this way I can pass around an object which has final say on how to convert a currency. which means the next we need to work on a place to keep the actual coin values. for this I created another class, this one taking a currency object, and a dictionary of coins. using the currency object I was just handed I convert to coins to their base value then save them. finally I created a function to allow changing the coin amount. for this I created a function that took key value arguments and used them as coin definitions. worked out their value and converted them to the base to adjust my total with.
+you may have noticed these are in a class methods. The use of self as a parameter. I did this so I could group the two functions with the currency index. This way I can pass around an object which has final say on how to convert a currency. Which means the next we need to work on a place to keep the actual coin values. For this I created another class, this one taking a currency object, and a dictionary of coins. Using the currency object I was just handed I convert to coins to their base value then save them. Finally I created a function to allow changing the coin amount. For this I created a function that took key value arguments and used them as coin definitions. Worked out their value and converted them to the base to adjust my total with.
 
     def change(self, *args, **kwargs):
         diff = c.denominations_to_base(kwargs)
@@ -105,14 +105,14 @@ you may have noticed these are in a class methods. the use of self as a paramete
             return True
         return False
 
-I also added a boolean return to represent if the change could happen without negative coins. all that's left now is to create a way to print the coin totals to the screen. creating the __str__ python function that calls the currency function solved this.
+I also added a boolean return to represent if the change could happen without negative coins. All that's left now is to create a way to print the coin totals to the screen. Creating the __str__ python function that calls the currency function solved this.
 
     def __str__(self):
         return json.dumps(c.get_denominations(self.value))
 
 cool basic functionality sorted.
 ### Bonus Features
-so this magical online sheet I use, has its flaws. but one perk is the character sheets have a JSON representation you can request. it took me a while to work out how to get it though, because the python request library kept getting blocked. I swapped from url open to a base request. I used a application to send a get request (postmaster chrome app) which succeeded then. copied the auto gen-ed python code resulting in:
+so this magical online sheet I use, has its flaws. But one perk is the character sheets have a JSON representation you can request. It took me a while to work out how to get it though, because the python request library kept getting blocked. I swapped from url open to a base request. I used a application to send a get request (postmaster chrome app) which succeeded then. Copied the auto gen-ed python code resulting in:
 
     if __name__ == "__main__":
         I =''
@@ -127,7 +127,7 @@ so this magical online sheet I use, has its flaws. but one perk is the character
             }
         url = f"/character/{int(input('char id: '))}/json"
 
-now I have all the url setup for a specific character and can get their data. this mean I can weave it into the currency system and manipulate it in a looped interpreter. i figured if the input is empty the user wants to pull data and refresh the local values. otherwise they enter space separated amounts like -5gp to adjust the amounts. finally q is quit.
+now I have all the url setup for a specific character and can get their data. This mean I can weave it into the currency system and manipulate it in a looped interpreter. I figured if the input is empty the user wants to pull data and refresh the local values. Otherwise they enter space separated amounts like -5gp to adjust the amounts. Finally q is quit.
 
     conn.request("GET", url, headers=headers)
     with conn.getresponse() as w:
@@ -136,7 +136,7 @@ now I have all the url setup for a specific character and can get their data. th
         p = purse(j['currencies'],c)
         print(p)
 
-refresh code breaks down into: send request, then with the response w get the text value and interpret it as json. navigate to the currencies sub object. which almost like I planned it is in the expected format for the currency c to read it. put them both in a purse object together for future use and finally print the contents. next up the adjustments.
+refresh code breaks down into: send request, then with the response w get the text value and interpret it as json. Navigate to the currencies sub object. Which almost like I planned it is in the expected format for the currency c to read it. Put them both in a purse object together for future use and finally print the contents. Next up the adjustments.
 
         try:
             m = [ re.match(r"\+?(?P<value>-?\d+)(?P<coin>\w+)", x).groupdict() for x in i.split(' ')]
@@ -146,7 +146,7 @@ refresh code breaks down into: send request, then with the response w get the te
         except Exception as e:
             print(e)
 
-this is in a try cause user input.... next I look for all parts of the input that look kind of like they could be talking about currency. in the format {-+}{some number}{type of coin} each found gets added to the list and used to make a dictionary of coins. this is then passed as key value arguments to the change function. and how we coded the change function it will ignore any coins it doesn't recognize. the final loop looks like this:
+this is in a try cause user input.... Next I look for all parts of the input that look kind of like they could be talking about currency. In the format {-+}{some number}{type of coin} each found gets added to the list and used to make a dictionary of coins. This is then passed as key value arguments to the change function. How we coded the change function it will ignore any coins it doesn't recognize. The final loop looks like this:
 
     while (i is not 'q'):
         if (i is ''):
@@ -241,4 +241,4 @@ this is in a try cause user input.... next I look for all parts of the input tha
             I = input()
 
 ### final thoughts
-in a game with many currencies, it might be cool to have a purse contain many currency objects. then use that to store them on the fly. you'd have to think about how to tell the difference in the change function. having the a conversion from one currency to another could make interesting interactions.
+in a game with many currencies, it might be cool to have a purse contain many currency objects. Then use that to store them on the fly. You'd have to think about how to tell the difference in the change function. Having the a conversion from one currency to another could make interesting interactions.
