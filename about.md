@@ -10,6 +10,7 @@ sidebar_link: true
 
 ## Contact
 - Email: [c-0-de+tutor@outlook.com](mailto:c-0-de+tutor@outlook.com)
+- Live Chat: [Facebook](m.me/111657817202965)
 - Github:
     - [Personal](github.com/megonemad1)
     - [Tutor](https://github.com/C-0-de)
@@ -17,7 +18,7 @@ sidebar_link: true
 - [twitter](https://twitter.com/C0de63990029)
 - [Twitch](https://www.twitch.tv/me_gone_mad1)
 
-I Self-motivated and enthusiastic programmer with 5 years' experience in agile development
+I'm a Self-motivated and enthusiastic programmer with 5 years' experience in agile development
 and testing in a professional environment. Passionate about developing the simplest
 solution to complex problems with creativity and integrity. always seeking to expand my
 experience and apply new practical coding skills.
